@@ -1,0 +1,8 @@
+wordpressUsername: kuflievskiy
+wordpressPassword: kuflievskiy
+wordpressEmail: kuflievskiy@gmail.com
+wordpressFirstName: kuflievskiy
+wordpressLastName: kuflievskiy
+wordpressBlogName: kuflievskiy.com
+service: 
+  type: LoadBalancer
