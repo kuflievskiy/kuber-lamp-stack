@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: httpd-service
+  namespace: development
+spec:
+  selector:
+    app: httpd
+  ports:
+    - protocol: "TCP"
+      port: 80
+      targetPort: 80
+#  this could be used if we want to make this service external and get the external IP address of it and use it to access the pod
+#  type: NodePort

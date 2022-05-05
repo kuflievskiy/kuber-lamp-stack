@@ -28,5 +28,5 @@ helm uninstall wordpress bitnami/wordpress
 
 export NODE_PORT=$(kubectl get --namespace nswordpress -o jsonpath="{.spec.ports[0].nodePort}" services wordpress)
 export NODE_IP=$(kubectl get nodes --namespace nswordpress -o jsonpath="{.items[0].status.addresses[0].address}")
-echo "WordPress URL: http://$NODE_IP:$NODE_PORT/"
+echo "http://$NODE_IP:$NODE_PORT/"
 ```
